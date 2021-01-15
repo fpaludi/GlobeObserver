@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>3 Loma Bajo.kml</name>
+	<Style id="inline37">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="inline55">
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="inline22">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#inline37</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#inline55</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>3 Loma Bajo</name>
+		<styleUrl>#inline22</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-60.40211213500903,-34.56367194600725,0 -60.40380601719135,-34.56500919661166,0 -60.40397405219589,-34.56508091048558,0 -60.40430326429244,-34.5651191504215,0 -60.40450156567249,-34.56505542176722,0 -60.40616150721943,-34.56374032680012,0 -60.40779363639963,-34.56244923265225,0 -60.40566550611233,-34.56064563220622,0 -60.4053026643166,-34.55989472684823,0 -60.40351042464187,-34.55924417554586,0 -60.40061636361307,-34.56243876898118,0 -60.39979302341433,-34.56331529637402,0 -60.40211213500903,-34.56367194600725,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

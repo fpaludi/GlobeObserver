@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "GlobeObserver"
+version = "0.1.0"
+description = "Package"
+authors = ["Palu"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pydantic = "1.7.2"
+shapely = "1.7.1"
+earthengine-api ="0.1.246"
+numpy = "1.19.5"
+matplotlib = "3.3.3"
+fiona = "1.8.18"
+rasterio = "1.1.8"
+geopandas = "0.8.1"
+geetools = " 0.6.7"
+google-api-python-client = "1.12.8"
+google-auth-oauthlib = "0.4.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+pytest-cov = "^2.10"
+mock = "^4.0"
+pre-commit = "^2.7"
+black = "^19.10b0"
+pylint = "2.6.0"
+flakehell = "^0.3.3"
+pep8 = "^1.7"
+flake8 = "^3.8"
+flake8-blind-except = "0.1"
+flake8-builtins = "^1.5"
+flake8-logging-format = "^0.6"
+flake8-comprehensions = "^3.2"
+flake8-fixme = "^1.1"
+flake8-pytest = "^1.3"
+flake8-mock = "^0.3"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+
+[tool.flakehell]
+# make output nice
+format = "grouped"
+# show line of source code in output
+show_source = true
+statistics = false
+application-import-names = "main"
+max_complexity = 6
+
+[tool.flakehell.plugins]
+pylint = ["+*", "-W1203"]
+flake8-blind-except = ["+*"]
+flake8-builtins = ["+*"]
+flake8-logging-format = ["+*"]
+flake8-comprehensions = ["+*"]
+flake8-fixme = ["+*"]
+flake8-pytest = ["+*"]
+flake8-mock = ["+*"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
