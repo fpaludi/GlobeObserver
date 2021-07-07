@@ -1,6 +1,6 @@
 # GlobeObserver
 
-This package allows you to download satellite images from
+This package allows you to download satellite images in .tif format from
 the Google Earth Engine (GEE) service
 
 ## Installation
@@ -8,22 +8,34 @@ the Google Earth Engine (GEE) service
 In order to get this package function, you will need to run the following commands:
 
 ```bash
-pip install poetry
-poetry config virtualenvs.create true
-poetry config virtualenvs.in-project true
-sudo apt-get install python-tk
+sudo apt-get install python3-tk
+make start_project
 ```
 
-Then install package dependencies
-
-```bash
-poetry install
-poetry update
-```
+This creates a virtual environment with all you need to download
+images from GEE.
 
 ## Basic Trial
-You can use the **main.py** to see a basic example. Please make sure of using a correct path to download the images
+The project provides a simple CLI in order to download satellite images.
+
+You can access de CLI help by running:
+```bash
+python3 globe_observer_cli.py --help
+```
+
+### Examples
+To download some satellite images you can run:
+
+```bash
+python3 globe_observer_cli.py download-images Sentinell2 data/loma_bajo.kml
+```
+
+or providing the dates of interest by running
+```bash
+python3 globe_observer_cli.py download-images Sentinell2 data/NReserve/NaturalReserve_Polygon.shp --start-date 2021-06-14 --end-date 2021-06-15
+```
+
 
 ### Load the Images
-We recommend using [QGIS](https://www.qgis.org/es/site/) to see the downloaded images 
+We recommend using [QGIS](https://www.qgis.org/es/site/) to see the downloaded images
 
