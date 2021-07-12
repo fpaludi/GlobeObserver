@@ -35,7 +35,13 @@ or providing the dates of interest by running
 python3 globe_observer_cli.py download-images Sentinell2 data/NReserve/NaturalReserve_Polygon.shp --start-date 2021-06-14 --end-date 2021-06-15
 ```
 
+then you can visualize the results by running something like:
+```bash
+python3 globe_observer_cli.py show-rgb-image results/gee_image_Sentinell2_NaturalReserve_Polygon_2021-06-14.tif
+```
+
+![Alt text](docs/show_reserve.png?raw=true "Title")
+
 
 ### Load the Images
-We recommend using [QGIS](https://www.qgis.org/es/site/) to see the downloaded images
-
+An interesting software to see downloaded data is [QGIS](https://www.qgis.org/es/site/)
