@@ -15,6 +15,9 @@ make start_project
 This creates a virtual environment with all you need to download
 images from GEE.
 
+The needed credentials are included in the repo. They are from a testing account so they can be used
+and published
+
 ## Basic Trial
 The project provides a simple CLI in order to download satellite images.
 
